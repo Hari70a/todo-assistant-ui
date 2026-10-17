@@ -24,6 +24,14 @@ Install the dependencies:
 npm install
 ```
 
+Configure the API base URL in `.env`:
+
+```bash
+VITE_API_URL=https://your-api.example.com
+```
+
+You can copy `.env.example` as a starting point. The API URL is exposed to the client, so only use a public base URL here.
+
 ### Development
 
 Start the development server with HMR:
