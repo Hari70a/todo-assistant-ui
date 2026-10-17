@@ -1,0 +1,18 @@
+<svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI powered Task Management</title>
+  <desc id="desc">A checklist with an artificial intelligence sparkle.</desc>
+  <defs>
+    <linearGradient id="mark" x1="20" y1="18" x2="132" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#6D28D9"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="144" height="144" rx="40" fill="url(#mark)"/>
+  <path d="M45 47H90C96.6274 47 102 52.3726 102 59V111C102 117.627 96.6274 123 90 123H45C38.3726 123 33 117.627 33 111V59C33 52.3726 38.3726 47 45 47Z" fill="white" fill-opacity=".96"/>
+  <path d="M48 72L55 79L68 65M48 97L55 104L68 90" stroke="#7E22CE" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M78 73H90M78 98H90" stroke="#D8B4FE" stroke-width="7" stroke-linecap="round"/>
+  <path d="M114 27L118.2 38.8L130 43L118.2 47.2L114 59L109.8 47.2L98 43L109.8 38.8L114 27Z" fill="#FDE68A"/>
+  <path d="M132 61L134.2 67.8L141 70L134.2 72.2L132 79L129.8 72.2L123 70L129.8 67.8L132 61Z" fill="#FDE68A"/>
+  <text x="184" y="78" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="750" letter-spacing="-1.4">AI powered</text>
+  <text x="184" y="122" fill="#7E22CE" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="750" letter-spacing="-1.4">Task Management</text>
+</svg>
