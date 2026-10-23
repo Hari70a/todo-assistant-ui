@@ -117,6 +117,10 @@ export default function Chatbot() {
           messageText += payload.text;
           updateChatAnswer(setChats, chatIndex, messageText);
         }
+        if(payload.type === "error" && payload.text) {
+          setError(payload.text);
+          updateChatAnswer(setChats, chatIndex, "Please fix the issue and try again.");
+        }
       });
     } catch (streamError) {
       setError(`Unable to stream a response: ${streamError instanceof Error ? streamError.message : String(streamError)}`);
