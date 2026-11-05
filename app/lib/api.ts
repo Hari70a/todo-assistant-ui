@@ -19,3 +19,7 @@ export function setAccessToken(token: string) {
 export function clearAccessToken() {
   sessionStorage.removeItem("access_token");
 }
+
+export function hasAccessToken() {
+  return !!getAccessToken();
+}

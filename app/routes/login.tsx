@@ -1,8 +1,8 @@
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { Link, useNavigate } from "react-router";
 import axios from "axios";
 import { AuthShell } from "../components/auth/AuthShell";
-import { API_URL, setAccessToken } from "../lib/api";
+import { API_URL, clearAccessToken, setAccessToken } from "../lib/api";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -10,6 +10,10 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    clearAccessToken();
+  }, []); 
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
