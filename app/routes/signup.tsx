@@ -20,7 +20,7 @@ export default function Signup() {
   const navigate = useNavigate();
   const [serverError, setServerError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { register, handleSubmit, formState: { errors } } = useForm<SignupFormValues>({ defaultValues: { role: "admin" } });
+  const { register, handleSubmit, formState: { errors } } = useForm<SignupFormValues>({ defaultValues: { role: "user" } });
 
   async function onSubmit(values: SignupFormValues) {
     setServerError("");
